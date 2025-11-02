@@ -1,0 +1,7 @@
+{
+  "directed": true,
+  "n": 30,
+  "edges": [],
+  "source": 0,
+  "weight_model": "edge"
+}
