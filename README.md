@@ -4,106 +4,11 @@ For this assignment, I implemented graph algorithms to optimize task scheduling 
 
 I generated 9 datasets following the requirements:
 
-small1
-8
-7
-Yes
-3
-Cycle in tasks 1-2-3, linear chain 4-5-6-7
-small2
-6
-5
-Yes
-2
-Single cycle + isolated chain
-small3
-7
-7
-No
-7
-Pure DAG with branching
-medium1
-12
-13
-Yes
-4
-Multiple cycles with connections
-medium2
-14
-13
-Yes
-2
-Star pattern with one cycle
-medium3
-15
-17
-Yes
-4
-Linear with backward edges
-large1
-25
-32
-Yes
-6
-Mixed structure with several SCCs
-large2
-30
-29
-No
-30
-Linear DAG for performance testing
-large3
-40
-52
-Yes
-9
-Complex dependencies with multiple cycles
+[table-67a2b726-4d80-421d-ba79-4fd971935c7f.xlsx](https://github.com/user-attachments/files/23292212/table-67a2b726-4d80-421d-ba79-4fd971935c7f.xlsx)
 
 All datasets use edge weights as specified in the weight_model field. The source node varies by dataset but is always a task with no dependencies.
 
-Results
-SCC
-8
-0.3
-8
--
--
-SCC
-30
-1.2
-30
--
--
-SCC
-40
-1.8
-40
--
--
-Topo Sort
-8
-0.2
--
-12
--
-Topo Sort
-30
-0.7
--
-58
--
-DAG-SP
-8
-0.3
--
--
-7
-DAG-SP
-30
-0.9
--
--
-29
+[table-67a2b726-4d80-421d-ba79-4fd971935c7f (1).xlsx](https://github.com/user-attachments/files/23292216/table-67a2b726-4d80-421d-ba79-4fd971935c7f.1.xlsx)
 
 The algorithms performed efficiently across all datasets. The SCC detection (Tarjan's algorithm) showed linear time complexity relative to the number of nodes. Topological sorting (Kahn's algorithm) scaled well with graph density. The DAG shortest path implementation processed all datasets in linear time as expected.
 
